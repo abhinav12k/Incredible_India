@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreDetailActivity">
+
+    <ScrollView
+        android:layout_width="378dp"
+        android:layout_height="480dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/more_detail_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/more_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_extra_bold"
+                    android:text="India Gate"
+                    android:textColor="#000000"
+                    android:textSize="24dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/rating_number3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.91"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/more_detail_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:layout_marginTop="12dp"
+                android:text="Details"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/more_detail_details"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:alpha="0.8"
+                android:text="A stunning archway standing as a tribute to the brave soldiers who sacrificed their lives for the country, India Gate is one of the landmarks of Delhi. Built with sandstone, this 42-m-high gate was the first of its kind in the national capital. The walls of the gateway have been inscribed with the names of 13,516 soldiers killed in the Northwestern Frontier in the Afghan war of 1919, besides 90,000 soldiers of the Indian Army who were martyred in World War I. The base of the monument is made of red Bharatpur stones and the structure of India Gate is similar to France's Arc- de- Triomphe.\n\nIndia Gate is fringed by lush well-maintained lawns that act as a popular picnic venue for families. The best time to visit this monument is at night when it is bathed in soft golden lights and glistens in the dark star-less sky.
+        \n\nThe foundation stone of this grand monument was laid by the Duke of Connaught in 1921 and it was designed by Edwin Lutyens. A decade later, the monument was dedicated to India by the then viceroy, Lord Irwin.
+
+        \n\nAmar Jawan Jyoti, made of marble, is located in front of India Gate and was constructed in the year 1971. It was built to pay tribute to the brave soldiers who lost their lives during the Indo-Pak War in December 1971. The flame is guarded by uniformed soldiers and a shining rifle crowned by an army helmet has also been kept near it.
+
+        \n\nIndia Gate also plays host to the awe-inspiring Republic Day Parade, when the President lays a wreath on the Amar Jawan Jyoti. After this, a grand parade is held along Rajpath and you can see contingents, tanks, vibrant floats, weapons all being conducted in a neat file. School children and folk dancers join the parade and add a cultural touch to the whole affair." />
+
+            <Button
+                android:id="@+id/roadMap_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:capitalize="none"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="30dp"
+                android:elevation="5dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Check  RoadMap"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:drawableRight="@drawable/ic_steps"
+                android:drawableEnd="@drawable/ic_steps"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/more_detail_top"
+        android:layout_width="415dp"
+        android:layout_height="233dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/india_gate_top" />
+
+    <ImageView
+        android:id="@+id/more_detail_down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow"
+        app:srcCompat="@drawable/ic_down_arrow" />
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
